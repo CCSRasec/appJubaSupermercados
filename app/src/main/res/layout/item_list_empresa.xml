@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEmpresas"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarSize="0dp"
+        android:visibility="visible"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp"
+        app:contentPadding="@dimen/standard_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutTopoPadreCassemiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutNomeCidadeEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnJuba2"
+                                style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                                android:layout_width="30dp"
+                                android:layout_height="0dp"
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="18sp"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="16dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_setings" />
+
+                            <TextView
+                                android:id="@+id/txtNomeEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Juba Supermercados "
+                                android:textColor="@android:color/background_dark"
+                                android:textSize="19dp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/cidadeEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="21dp"
+                                android:text="Rio Branco, MT"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgEmpresa"
+                android:layout_width="130dp"
+                android:layout_height="125dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@+id/layoutTopoPadreCassemiro"
+                app:srcCompat="@drawable/banner320x250" />
+
+            <TextView
+                android:id="@+id/txtHorarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Horário: 07:30 - 19:00"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtLogradouro"
+                app:layout_constraintStart_toEndOf="@+id/imgEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/layoutTopoPadreCassemiro" />
+
+            <TextView
+                android:id="@+id/txtLogradouro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="R. Pedro Inocêncio de Araújo"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/txtHorarios" />
+
+            <TextView
+                android:id="@+id/txtFone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Fone: (65) 3257-1290"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imgEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/txtLogradouro" />
+
+            <TextView
+                android:id="@+id/txtGerente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Gerente: Fabio  "
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imgEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/txtFone" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="1"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/imgEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/txtGerente" />
+
+            <Button
+                android:id="@+id/btnJuba"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutTopoPadreCassemiro" />
+
+            <ImageView
+                android:id="@+id/img_seta2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnJuba"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_forwardbig" />
+
+            <TextView
+                android:id="@+id/txt_aberto_Fechado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Aberto"
+                android:textColor="#008000"
+                android:textColorHint="#008000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtHorarios"
+                app:layout_constraintTop_toBottomOf="@+id/layoutTopoPadreCassemiro" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

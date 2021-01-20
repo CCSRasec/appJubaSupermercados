@@ -1,0 +1,11 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/toolbarColor"
+    app:popupTheme="@color/colorPrimary"
+    app:theme="@style/AppTheme"
+    tools:visibility="visible">
+    <!-- Note que eu usei o mesmo Style da Aplicação mas você pode usar ou criar o seu, modifique as cores e entenda cada comando-->
+</androidx.appcompat.widget.Toolbar>

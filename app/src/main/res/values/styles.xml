@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--- tema da ratingBar -->
+    <style name="RatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <!--item name="android:background=" android:id="@android:id/background" android:drawable="@drawable/star_empty" />
+        <item item name="android:background" android:id="@android:id/secondaryProgress" android:drawable="@drawable/star_half" />
+        <item android:id="@android:id/progress" android:drawable="@drawable/star_full" /-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppThemeFull" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppThemeUsaActionBar" parent="Theme.AppCompat.DayNight">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- TEMA DE TESTE  -->
+    <style name="AppThemeteste" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--item name="android:textColorPrimary">@color/colorTextPadrao</item-->
+        <!--item name="android:textColorSecondary">@color/colorTextPadrao</item-->
+
+    </style>
+
+    <style name="AppThemeteste.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--item name="android:textColor">@color/colorTextPadrao</item-->
+    </style>
+    <!-- FIM TEMA TESTE -->
+
+    <style name="CardView.SS">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="AppThemeFull.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeFull.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeFull.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+

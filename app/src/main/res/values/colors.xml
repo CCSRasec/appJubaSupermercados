@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#E91E63</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="sombraCinza">#00FFFFFF</color>
+
+    <color name="toolbarColor">#E91E63</color>
+    <color name="holo_gray">#E91E63</color>
+    <color name="holo_gray_claro">#F4F4F4</color>
+    <color name="amarelo">#ffff00</color>
+    <color name="azulEscuro">#0929DC</color>
+</resources>

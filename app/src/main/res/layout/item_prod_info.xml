@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layoutTopoPadreCassemiro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/layoutNomeCidadeEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteX="310dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtNomeEmpresa"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:text="Juba Supermercados "
+                                        android:textColor="@android:color/background_dark"
+                                        android:textSize="19dp"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        app:layout_constraintEnd_toEndOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/cidadeEmpresa"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="21dp"
+                                        android:text="Cáceres, MT"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+                                        app:layout_constraintHorizontal_bias="0.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <RatingBar
+                                        android:id="@+id/ratingBar"
+                                        style="@android:style/Widget.DeviceDefault.RatingBar.Indicator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:numStars="5"
+                                        android:rating="1.0"
+                                        android:stepSize="1.0"
+                                        android:visibility="gone"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/txtID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="40dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="ID"
+                                        android:visibility="gone"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="1.0" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:srcCompat="@drawable/banner320x250" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProduto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardEmpresa"
+        tools:layout_editor_absoluteX="16dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_prod_ofer"
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/produto_sem_imagem"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/btnInformacoes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+ Informações"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtPrecoDe" />
+
+            <ImageView
+                android:id="@+id/img_oferta"
+                android:layout_width="74dp"
+                android:layout_height="71dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_prod_ofer"
+                app:srcCompat="@drawable/oferta" />
+
+            <TextView
+                android:id="@+id/txtnomeprod"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="-4sp"
+                android:text="Feijão Carioca Tipo 1 Camil Todo Dia 1 Kg"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtPrecoDe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/img_prod_ofer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/txtPrecoDe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="R$ 999,99"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/img_prod_ofer"
+                app:layout_constraintTop_toBottomOf="@+id/txtnomeprod" />
+
+            <TextView
+                android:id="@+id/txtPrecoPor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="R$ 999,99"
+                android:textColor="#008000"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@+id/img_prod_ofer"
+                app:layout_constraintTop_toBottomOf="@+id/txtnomeprod" />
+
+            <TextView
+                android:id="@+id/txtOFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="35% OFF"
+                android:textColor="#FF8C00"
+                app:layout_constraintBottom_toTopOf="@+id/txtPrecoPor"
+                app:layout_constraintStart_toEndOf="@+id/txtPrecoPor"
+                app:layout_constraintTop_toBottomOf="@+id/txtnomeprod"
+                app:layout_constraintVertical_bias="0.083" />
+
+            <TextView
+                android:id="@+id/txtProdCate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Categoria: Café"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnInformacoes"
+                app:layout_constraintStart_toEndOf="@+id/img_prod_ofer"
+                app:layout_constraintTop_toBottomOf="@+id/txtPrecoPor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
